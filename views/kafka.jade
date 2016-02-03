@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  form(name="input", action="html_form_action.asp", method="get")
+    key User
+      input(type="text", name="user")
+
+    key Message
+      input(type="text", name="message")
+
+    input(type="submit", value="Submit")
